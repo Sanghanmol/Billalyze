@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+sqlalchemy
+pytesseract
+pdfplumber
+pillow
+streamlit
+plotly

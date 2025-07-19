@@ -58,8 +58,8 @@ A full-stack mini-application to upload receipts (images, PDFs, text files), ext
 
 ## ⚙️ Setup Instructions
 
-- git clone https://github.com/yourusername/receipt-parser-app.git
-- cd receipt-parser-app
+- git clone https://github.com/Sanghanmol/Billalyze.git
+- cd billalyze
 - python -m venv venv
 - source venv/bin/activate  # On Windows: venv\\Scripts\\activate
 - pip install -r requirements.txt

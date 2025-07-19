@@ -6,7 +6,7 @@ import plotly.express as px
 st.set_page_config(page_title="Receipt Dashboard", layout="wide")
 st.title("📄 Receipt & Bill Dashboard")
 
-conn = conn = sqlite3.connect("F:/Billalyze/receipts.db")
+conn = sqlite3.connect("F:/Billalyze/receipts.db")
 df = pd.read_sql_query("SELECT * FROM receipts", conn)
 
 if df.empty:

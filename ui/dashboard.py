@@ -2,11 +2,15 @@ import streamlit as st
 import pandas as pd
 import sqlite3
 import plotly.express as px
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+db_path = os.path.join(BASE_DIR, "receipts.db")
+conn = sqlite3.connect(db_path)
 
 st.set_page_config(page_title="Receipt Dashboard", layout="wide")
 st.title("📄 Receipt & Bill Dashboard")
 
-conn = sqlite3.connect("F:/Billalyze/receipts.db")
 df = pd.read_sql_query("SELECT * FROM receipts", conn)
 
 if df.empty:

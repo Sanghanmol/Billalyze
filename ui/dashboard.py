@@ -4,8 +4,7 @@ import sqlite3
 import plotly.express as px
 import os
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-db_path = os.path.join(BASE_DIR, "receipts.db")
+db_path = os.path.join(os.path.dirname(__file__), "..", "receipts.db")
 conn = sqlite3.connect(db_path)
 
 st.set_page_config(page_title="Receipt Dashboard", layout="wide")
